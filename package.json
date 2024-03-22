@@ -1,0 +1,38 @@
+{
+  "name": "eosrem",
+  "version": "1.0.0",
+  "description": "Lightweight HTML rendering library.",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "BernitaMoen",
+  "keywords": [
+    "st-lib",
+    "consequuntur"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MathiasTorp/eosrem.git"
+  },
+  "scripts": {
+    "start:tsc": "tsc",
+    "prebuild": "rimraf -rf ./lib",
+    "build": "tsc -p ./tsconfig.json",
+    "test": "tsc -p ./tsconfig.json --noEmit",
+    "prepublishOnly": "npm run build",
+    "prestart": "rimraf -rf ./lib",
+    "start": "tsc -p ./tsconfig.json -w"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/MathiasTorp/eosrem.git"
+}
